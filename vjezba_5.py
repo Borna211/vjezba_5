@@ -4,9 +4,11 @@ def provjera_broja (broj):
     else:
         return f"Broj {broj} je izavn raspona"
     
-    if __name__== "__main__":
-        try:
-            uneseni_broj = int(input("unesite broj: "))
-            print(provjera_broja(uneseni_broj))
-        except ValueError:
-            print("unesena vrijednost nije broj:.")
+if __name__== "__main__":
+    try:
+        prvi_broj = int(input("unesite prvi broj: "))
+        print(provjera_broja(prvi_broj))
+        drugi_broj = int(input("unesite drugi broj: "))
+        print(provjera_broja(drugi_broj))
+    except ValueError:
+        print("unesena vrijednost nije broj:.")
